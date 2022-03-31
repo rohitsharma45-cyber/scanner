@@ -39,6 +39,6 @@ RUN apt-get -yq install \
     apt-get clean && \
     rm -rf /var/lib/{apt,dpkg,cache,log}
 
-ADD scanner.py /usr/local/bin/rapidscan.py
+ADD scanner.py /usr/local/bin/scanner.py
 WORKDIR /app
 ENTRYPOINT ["/usr/local/bin/scanner.py"]
