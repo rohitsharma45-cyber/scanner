@@ -39,6 +39,6 @@ RUN apt-get -yq install \
     apt-get clean && \
     rm -rf /var/lib/{apt,dpkg,cache,log}
 
-ADD scanner.py /usr/local/bin/scanner.py
+ADD scan.py /usr/local/bin/scan.py
 WORKDIR /app
-ENTRYPOINT ["/usr/local/bin/scanner.py"]
+ENTRYPOINT ["/usr/local/bin/scan.py"]
